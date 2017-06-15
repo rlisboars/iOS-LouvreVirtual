@@ -17,6 +17,9 @@
 		434757841EF0BF1A006F0207 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434757831EF0BF1A006F0207 /* RoundedImage.swift */; };
 		43C5C4571EF1F0BC001CE004 /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */; };
 		43C5C4591EF1F13F001CE004 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4581EF1F13F001CE004 /* Artwork.swift */; };
+		43C5C45F1EF20E0F001CE004 /* Beacon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C5C45E1EF20E0F001CE004 /* Beacon.storyboard */; };
+		43C5C4611EF20E36001CE004 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4601EF20E36001CE004 /* BeaconViewController.swift */; };
+		43C5C4631EF21191001CE004 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4621EF21191001CE004 /* BLE.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		434757831EF0BF1A006F0207 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
 		43C5C4581EF1F13F001CE004 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		43C5C45E1EF20E0F001CE004 /* Beacon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Beacon.storyboard; sourceTree = "<group>"; };
+		43C5C4601EF20E36001CE004 /* BeaconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
+		43C5C4621EF21191001CE004 /* BLE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 				4347576E1EF0AC74006F0207 /* ViewController.swift */,
 				434757811EF0BD40006F0207 /* RadarViewController.swift */,
 				43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */,
+				43C5C4601EF20E36001CE004 /* BeaconViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 			children = (
 				434757751EF0AC74006F0207 /* LaunchScreen.storyboard */,
 				434757701EF0AC74006F0207 /* Main.storyboard */,
+				43C5C45E1EF20E0F001CE004 /* Beacon.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			children = (
 				434757831EF0BF1A006F0207 /* RoundedImage.swift */,
 				43C5C4581EF1F13F001CE004 /* Artwork.swift */,
+				43C5C4621EF21191001CE004 /* BLE.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -174,6 +183,7 @@
 				434757771EF0AC74006F0207 /* LaunchScreen.storyboard in Resources */,
 				434757741EF0AC74006F0207 /* Assets.xcassets in Resources */,
 				434757801EF0B9F5006F0207 /* Journal.ttf in Resources */,
+				43C5C45F1EF20E0F001CE004 /* Beacon.storyboard in Resources */,
 				434757721EF0AC74006F0207 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,9 +198,11 @@
 				4347576F1EF0AC74006F0207 /* ViewController.swift in Sources */,
 				434757841EF0BF1A006F0207 /* RoundedImage.swift in Sources */,
 				4347576D1EF0AC74006F0207 /* AppDelegate.swift in Sources */,
+				43C5C4611EF20E36001CE004 /* BeaconViewController.swift in Sources */,
 				434757821EF0BD40006F0207 /* RadarViewController.swift in Sources */,
 				43C5C4591EF1F13F001CE004 /* Artwork.swift in Sources */,
 				43C5C4571EF1F0BC001CE004 /* ArtViewController.swift in Sources */,
+				43C5C4631EF21191001CE004 /* BLE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
