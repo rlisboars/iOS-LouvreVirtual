@@ -15,6 +15,8 @@
 		434757801EF0B9F5006F0207 /* Journal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4347577F1EF0B9F5006F0207 /* Journal.ttf */; };
 		434757821EF0BD40006F0207 /* RadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434757811EF0BD40006F0207 /* RadarViewController.swift */; };
 		434757841EF0BF1A006F0207 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434757831EF0BF1A006F0207 /* RoundedImage.swift */; };
+		43C5C4571EF1F0BC001CE004 /* ArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */; };
+		43C5C4591EF1F13F001CE004 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5C4581EF1F13F001CE004 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4347577F1EF0B9F5006F0207 /* Journal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Journal.ttf; sourceTree = "<group>"; };
 		434757811EF0BD40006F0207 /* RadarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarViewController.swift; sourceTree = "<group>"; };
 		434757831EF0BF1A006F0207 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtViewController.swift; sourceTree = "<group>"; };
+		43C5C4581EF1F13F001CE004 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				4347576C1EF0AC74006F0207 /* AppDelegate.swift */,
-				4347576E1EF0AC74006F0207 /* ViewController.swift */,
-				434757701EF0AC74006F0207 /* Main.storyboard */,
-				434757811EF0BD40006F0207 /* RadarViewController.swift */,
-				434757731EF0AC74006F0207 /* Assets.xcassets */,
-				434757751EF0AC74006F0207 /* LaunchScreen.storyboard */,
-				4347577F1EF0B9F5006F0207 /* Journal.ttf */,
 				434757781EF0AC74006F0207 /* Info.plist */,
-				434757831EF0BF1A006F0207 /* RoundedImage.swift */,
+				434757731EF0AC74006F0207 /* Assets.xcassets */,
+				43C5C45A1EF1FA48001CE004 /* ViewControllers */,
+				43C5C45B1EF1FA64001CE004 /* Views */,
+				43C5C45D1EF1FA92001CE004 /* Fonts */,
+				43C5C45C1EF1FA81001CE004 /* Helpers */,
 			);
 			path = LouvreVirtual;
+			sourceTree = "<group>";
+		};
+		43C5C45A1EF1FA48001CE004 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4347576E1EF0AC74006F0207 /* ViewController.swift */,
+				434757811EF0BD40006F0207 /* RadarViewController.swift */,
+				43C5C4561EF1F0BC001CE004 /* ArtViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43C5C45B1EF1FA64001CE004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				434757751EF0AC74006F0207 /* LaunchScreen.storyboard */,
+				434757701EF0AC74006F0207 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		43C5C45C1EF1FA81001CE004 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				434757831EF0BF1A006F0207 /* RoundedImage.swift */,
+				43C5C4581EF1F13F001CE004 /* Artwork.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		43C5C45D1EF1FA92001CE004 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4347577F1EF0B9F5006F0207 /* Journal.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +143,7 @@
 				TargetAttributes = {
 					434757681EF0AC73006F0207 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 5SU2HWXJ8T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +189,8 @@
 				434757841EF0BF1A006F0207 /* RoundedImage.swift in Sources */,
 				4347576D1EF0AC74006F0207 /* AppDelegate.swift in Sources */,
 				434757821EF0BD40006F0207 /* RadarViewController.swift in Sources */,
+				43C5C4591EF1F13F001CE004 /* Artwork.swift in Sources */,
+				43C5C4571EF1F0BC001CE004 /* ArtViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5SU2HWXJ8T;
 				INFOPLIST_FILE = LouvreVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlisboars.LouvreVirtual;
@@ -284,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5SU2HWXJ8T;
 				INFOPLIST_FILE = LouvreVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlisboars.LouvreVirtual;
@@ -311,6 +354,7 @@
 				4347577D1EF0AC74006F0207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

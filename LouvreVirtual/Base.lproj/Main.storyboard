@@ -161,11 +161,11 @@
                                 <rect key="frame" x="136" y="509" width="51" height="31"/>
                                 <color key="onTintColor" red="0.90069115161895752" green="0.5989338755607605" blue="0.15760290622711182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="switched:" destination="o9o-Th-3cu" eventType="valueChanged" id="fFR-Lr-ErH"/>
+                                    <action selector="turnRadarOnOff:forEvent:" destination="o9o-Th-3cu" eventType="valueChanged" id="ySX-Wx-Igi"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ligar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGh-No-b2m">
-                                <rect key="frame" x="193" y="504" width="34" height="40"/>
+                                <rect key="frame" x="193" y="504" width="33.5" height="40"/>
                                 <fontDescription key="fontDescription" name="Journal" family="Journal" pointSize="30"/>
                                 <color key="textColor" red="0.90069115161895752" green="0.5989338755607605" blue="0.15760290622711182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -195,19 +195,21 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ivRadar" destination="t2d-0b-qSO" id="ZCn-7c-XpF"/>
                         <outlet property="ivTour" destination="Rc6-bG-aLQ" id="mvK-iV-UHf"/>
                         <outlet property="vRadar" destination="Bdy-od-2h0" id="v3m-8j-f61"/>
                         <outlet property="vWelcome" destination="Qb2-cU-vPn" id="VCE-Dh-fbU"/>
+                        <segue destination="8oi-KB-dgg" kind="show" identifier="artSegue" id="BT3-QQ-kMF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gt-pf-0L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774.375" y="34.859154929577464"/>
         </scene>
-        <!--View Controller-->
+        <!--Art View Controller-->
         <scene sceneID="HC1-sz-Gwm">
             <objects>
-                <viewController id="8oi-KB-dgg" sceneMemberID="viewController">
+                <viewController id="8oi-KB-dgg" customClass="ArtViewController" customModule="LouvreVirtual" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uyp-zc-7h7"/>
                         <viewControllerLayoutGuide type="bottom" id="eQ4-Cc-3dz"/>
@@ -217,13 +219,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Quadro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxL-Ez-Qj8">
-                                <rect key="frame" x="16" y="28" width="288" height="54"/>
+                                <rect key="frame" x="16" y="28" width="288" height="53.5"/>
                                 <fontDescription key="fontDescription" name="Journal" family="Journal" pointSize="40"/>
                                 <color key="textColor" red="0.90069115161895752" green="0.5989338755607605" blue="0.15760290622711182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tZI-tt-D1V">
-                                <rect key="frame" x="0.0" y="82" width="320" height="180"/>
+                                <rect key="frame" x="0.0" y="81.5" width="320" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="bdm-XD-wHQ"/>
                                 </constraints>
@@ -234,9 +236,12 @@
                                 <state key="normal" title="Voltar">
                                     <color key="titleColor" red="0.90069115161895752" green="0.5989338755607605" blue="0.15760290622711182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="back:" destination="8oi-KB-dgg" eventType="touchUpInside" id="9wO-YP-rbH"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZw-S4-o5k">
-                                <rect key="frame" x="16" y="282" width="288" height="236"/>
+                                <rect key="frame" x="16" y="281.5" width="288" height="236.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
@@ -259,6 +264,11 @@
                             <constraint firstAttribute="bottom" secondItem="lZw-S4-o5k" secondAttribute="bottom" constant="50" id="sGF-Xj-nZ4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivPhoto" destination="tZI-tt-D1V" id="Epy-F4-K3l"/>
+                        <outlet property="lbName" destination="bxL-Ez-Qj8" id="4Si-8O-Ivb"/>
+                        <outlet property="tvDescription" destination="lZw-S4-o5k" id="pbC-Bw-8by"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RC8-gb-jAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
